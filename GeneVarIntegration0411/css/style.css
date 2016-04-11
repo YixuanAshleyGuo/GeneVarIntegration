@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body{
+    margin:0;
+}
+
+#maincontent{
+    margin: 0;
+    font-family: Goudy Old Style;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    width:100%;
+    min-height: 800px;
+    background-color: aliceblue;
+}
+
+#maincontent h2{
+    font-size: 35px;
+    font-style: bold;
+}
+.sideicon{
+    width: 30%;
+/*    height: auto;*/
+    float: left;
+    align-items: center;
+    background-color: aliceblue;
+}
+/*
+@media screen and (max-width : 660px){
+    .sideicon a img{
+        height: 10px;
+    }
+}
+*/
+.sideicon li{
+    transition: all .2s ease-in-out;
+    padding-top: 10px;
+}
+.sideicon li:hover{
+    transform:translateY(-8px);
+    color:palegreen;
+}
+.sideicon ul{
+    list-style-type:none; 
+    display: verticle;
+    padding-top:40px;
+    padding-left: 100px;
+}
+.sideicon a img{
+    height: 50px;
+}
+
+.bodymain{
+    padding: 10px 80px 10px 15px;
+    width: 70%;
+    float: left;
+    background-color: aliceblue;
+}
+#body_img img{
+    opacity: 0.2;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+}
+.bodymain ul{
+    padding: 10px 10px 10px 10px;
+}
+
+.bodymain_head{
+    margin-top: 40px;
+    padding: 10px auto 5px auto;
+}
+.bodymain p{
+    font-size:  16px;
+    margin-bottom: 0;
+}
+.bodymain_head img{
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+/*    display: inline-block;*/
+}
+
+.dont-render-dawg {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+nav{
+    max-height: 160px;
+    min-width: 1000px;
+}
+.main-nav , footer{
+    background-color:  #b3ffb3;
+    margin: 0 auto;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.main-nav ul, #refers ul {
+  margin: 0 auto;
+  padding: 10px;
+  font-family:  Impact, Charcoal, sans-serif;
+/*  list-style-type:none; */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.main-nav ul li .svgs{
+    width: 50px;
+}
+.main-nav ul li span{
+    width: 100px;
+} 
+
+.main-nav li a , #refers a{
+  padding: 1.5rem 1rem;
+  font-size: 1.6rem;
+  max-width: 160px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  color: black;
+}
+#nav_img{
+    height: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    transition: all .2s ease-in-out;
+}
+#nav_img:hover{
+    transform:scale(1.1);
+}
+#nav_img img {
+    height: 8rem;
+}
+
+#nav_word h1{
+    font-size: 25px;
+    padding-top: 15px;
+    margin:0;
+}
+
+/*
+svg:hover, svg:focus{
+  box-shadow: 2px 2px 18px white;    
+}
+*/
+
+.main-nav a:hover svg, .main-nav a:focus svg {
+  transform: scale(1.15);
+  fill: #66CD00;
+}
+.main-nav a svg, .main-nav a span, #refers, .sideicon
+{
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+#refers #linkedins:hover svg, #refers #linkedins:focus svg{
+    fill: #007bb5;
+}
+#refers #githubs:hover svg, #refers #githubs:focus svg{
+    fill: #7b0099;
+}
+#refers #facebooks:hover svg, #refers #facebooks:focus svg{
+    fill: #3b5998;
+}
+#refers #emails:hover svg, #refers #emails:focus svg{
+    fill: #dc4e41;
+}
+
+.main-nav a:hover span, .main-nav a:focus span {
+  color: #66CD00;
+  text-shadow: 2px 2px 18px white;
+}
+
+.main-nav span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0.25rem 0 0 0;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 1rem;
+  fill: #999;
+}
+
+
+/*
+@media (min-width: 1000px) {
+  .main-nav a {
+    max-width: 500px;
+    font-size: 2rem;
+  }
+  .main-nav .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+*/
+#myCarousel, #myCarousel2{
+    width: 60%;
+    margin: 20px auto;
+}
+.item{
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.item img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.interests_content h2, .interests_content h3, .interests_content p{
+    text-align: center;
+    padding:0 50px 0 50px;
+}
+
+embed{
+   margin-left:20px;
+   margin-right: 20px;
+}
+#welcome, #welcome img{
+    font-family: Goudy Old Style;
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    background-color: aliceblue;
+}
+#welcome h1{
+    height: 100px;
+    margin:0;
+    padding: 0;
+    height: 60px;
+    text-align: center;    
+    font-style: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 50px;
+}
+#welcome h1 a:hover{
+    font-size: 60px;
+    color: indianred;
+    text-decoration: none;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#auto_back{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    background-color: #b3ffb3;
+    opacity: 0.25;
+}
+#autocaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    text-align: center;
+    color:black;
+}
+
+#auto_contain{
+    padding: 30px 0;
+    position:relative;
+    font-size: 40px;
+    font-style: italic;
+}
+@media screen and (max-width : 660px){
+    #welcome span{
+        font-size:20px;
+    }
+}
+@media screen and (max-width : 500px){
+    #welcome span{
+        font-size:15px;
+    }
+}
+.measurable {
+    position:absolute;
+    visibility: hidden;
+}
+.static.first, .static.second{
+    transition: transform 3s ease;
+}
+
+#refers a :hover svg, #refers a :focus svg{
+    fill: #66CD00;
+}
+
+#terms a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;    
+    color: grey;
+}
+
+#terms a:hover{
+    color: forestgreen;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px white;
+}
+
+#query_tbl
+  {
+/*  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+  width:600;
+  border-collapse:collapse;
+  }
+
+#query_tbl td, #query_tbl th 
+  {
+  max-width: 120px;
+/*  min-height: 300px;*/
+  height: 40px;
+  overflow: scroll;
+  font-size:0.8em;
+  border:1px solid #98bf21;
+  text-align: center;
+/*  padding:3px 7px 2px 7px;*/
+  }
+#query_tbl td#acmg0{
+    background-color: darkgrey;
+}
+#query_tbl td#acmg1{
+    background-color: palegreen;
+}
+#query_tbl th{
+    
+  font-size:1em;
+  padding:5px 2px auto 2px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+  color:#ffffff;
+}
+#query_tbl td #degree5{
+    background-color: darkred;
+}
+#query_tbl td #degree4{
+    background-color: indianred;
+}
+#query_tbl td #degree3{
+    background-color: lightcoral;
+}
+#query_tbl td #degree2{
+    background-color: lightblue;
+}
+#query_tbl td #degree1{
+    background-color: deepskyblue;
+}
+#query_tbl td #default{
+    background-color: darkgrey;
+}
+#query_tbl tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+/*
+#query_tbl td:hover{
+    box-shadow: 0 0 2px 2px blue;
+}
+*/
+/*
+ .button{
+width: 180px;
+line-height: 38px;
+background-color: white;
+color:black;
+text-align: center;
+font-weight: bold;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+transition-property: background-color color;
+transition-duration: 0.3s;
+}
+    
+.button :click{
+    background-color: darkgrey;
+    color:aliceblue;
+}
+*/
+    
+/*border:1px solid #FFFFFF;*/
+/*text-decoration-color: #FFFFFF;*/
+/*box-shadow: 0 1px 2px #b9ecc4 inset,0 -1px 0 #6c9f76 inset,0 -2px 3px #b9ecc4 inset;*/
+/*
+background: -webkit-linear-gradient(top,#90dfa2,#84d494);
+background: -moz-linear-gradient(top,#90dfa2,#84d494);
+background: linear-gradient(top,#90dfa2,#84d494);
+*/
+
+
+  
+input[type="text"]
+{
+background-color:#F0FCFF;
+margin: 0;
+padding:0;
+height: 100%;
+width: 100%;
+}
+input[type="submit"], select
+{
+/*font-family: Trebuchet MS;
+width:relative; height:50px; */
+width:auto;
+height: 40px;
+border: 0;
+padding-right: 15px;
+background-color: skyblue;
+transition-property: background-color;
+transition-timing-function: linear;
+}  
+input[type="submit"]:hover, select:hover{
+    background-color:#84d494;
+    color: white;
+    transition-duration: 0.3s;
+}
+input[name="suggestion"]{
+    background-color: deepskyblue;
+     transition: all .2s ease-in-out;
+}
+input[name="suggestion"]:hover{
+    transform:translateY(-8px);
+}
+
+input[type="button"]{
+    border-bottom-style: none;
+    border-width: 0;
+    height:40px;
+    background-color: lightgrey;
+    color:black;
+    transition-property: background-color, color;
+    transition-timing-function: linear;
+}
+input[type="button"]:hover{
+    background-color: darkgrey;
+    color:white;
+    transition-duration: 0.3s;
+}
